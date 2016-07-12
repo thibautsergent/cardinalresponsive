@@ -3,7 +3,7 @@
 *
 * @File: 			template.php
 * @Package:		GetSimple
-* @Action:		Cardinal theme for GetSimple CMS
+* @Action:		CardinalResponsive theme for GetSimple CMS
 *
 *****************************************************/
 ?>
@@ -25,11 +25,11 @@
 				<?php get_navigation(return_page_slug()); ?>
 			</ul>
 		</nav>
-		<!-- titre site -->
+		<!-- website title -->
 		<span><a href="<?php get_site_url(); ?>"><?php get_site_name(); ?></a></span>
 	</header>
 	<main>
-		<!-- titre page -->
+		<!-- page title  -->
 		<h1><?php get_page_title(); ?></h1>
 		<!-- contenu -->
 		<div id="page-content">
