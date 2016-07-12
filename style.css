@@ -1,0 +1,159 @@
+/** GLOBAL RESETS **/
+:link,:visited {text-decoration:none}
+h1,h2,h3,h4,h5,h6,pre,code {font-size:1em;font-weight:400;}
+ul,dl,dt,dd,ol,li,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,input {margin:0; padding:0}
+a img,:link img,:visited img {border:none}
+
+/** GLOBAL SETS **/
+.clear {clear:both;}
+.hidden {display:none;}
+
+a:link, a:visited {color:#BA0000;text-decoration:underline;}
+a:hover, a:focus {color:#1a1a1a;text-decoration:underline;}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+html, body {margin:0;}
+
+body {
+	margin: 0 0 50px 0;
+	font-size: 13px;
+	color: #222;
+	font-family: arial,lucida,tahoma, helvetica, verdana;
+	word-break: keep-all;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* HEADER */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* menu */
+
+header {
+	background-image: linear-gradient(to bottom, #BA2828 0%, #D33432 100%);
+}
+
+header a {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+header nav ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	list-style: none;
+	
+	padding: 10px;
+	margin: 0;
+}
+
+header nav ul li {
+	margin: 0 10px 0 0;
+	font-size: 13px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+header nav li a {
+	display: block;
+	line-height: 30px;
+	padding: 0 10px;
+}
+
+header nav li a:link, header nav li a:visited {
+	border: 1px solid #D23939;
+	color: #E17979;
+	text-decoration: none;
+}
+
+header nav li a:hover, header nav li a:focus {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+header nav li.current a {
+	border: 1px solid #FFC4C4;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+/* website title */
+
+header span, header span a:link, header span a:visited, header span a:hover {
+	display: block;
+	padding: 10px;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 52px;
+	text-transform: uppercase;
+
+	font-family: Arial;
+	letter-spacing: -2px;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* MAIN */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+main {
+	width: 80%; margin-left: auto; margin-right: auto;
+	font-size: 14px; line-height: 22px;
+	margin-bottom:50px;
+	padding: 10px;
+	flex: 1;
+	
+	background: none repeat scroll 0% 0% rgba(255, 255, 255, 0.7);
+}
+
+main h1 {font-size: 40px; font-family: arial; line-height: 40px; letter-spacing: -2px; margin: 25px 0 20px 0; text-align: center;}
+main h2 {font-size: 25px; font-family: arial; line-height: 37px; letter-spacing: -1px; margin: 25px 0 10px 0;}
+main h3 {font-family: arial; font-size: 18px; color: #1a1a1a; margin: 25px 0 10px 0;}
+main h4 {font-family: arial; font-size: 16px; color: #1a1a1a; margin: 25px 0 10px 0;}
+main h5 {font-family: arial; font-size: 14px; color:#1a1a1a; margin: 25px 0 10px 0;}
+main h6 {font-family: arial; font-size: 10px; color:#1a1a1a; margin: 25px 0 10px 0;}
+
+main p, main ul, main ol {margin: 0 0 22px 0;}
+main ul, main ol {margin-left: 25px;}
+main ul ul, main ol ul, main ul ol, main ol ol {margin: 0 0 0 25px;}
+
+main blockquote {
+	margin:0 0 22px 20px;
+	line-height: 19px;
+	font-size:13px;
+	color:#666;
+	font-style:italic;
+	border-left:2px solid #ccc;
+	padding:0 0 0 15px;
+}
+
+main code {border:1px dotted #ececec;padding:2px;font-family: Consolas, Monaco, "Courier New", Courier, monospace;font-size: 12px;background:#f9f9f9;color:#000;}
+main pre code {line-height:17px;padding:15px;border:1px dotted #ececec;font-family: Consolas, Monaco, "Courier New", Courier, monospace;font-size: 12px;background:#f9f9f9;color:#000;margin-bottom:22px;display:block;}
+
+main img {margin:0 0 20px 0;border:1px solid #1a1a1a;max-width: 100%;}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* device screen width < 826px */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media (max-width: 825px) {
+	header nav ul {
+		flex-direction: column;
+		flex-wrap: nowrap;
+		margin-bottom: 10px;
+	}
+	
+	header nav ul a {
+		margin-bottom: 25px;
+	}
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* FOOTER */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+footer div {
+	width: 80%; margin-left: auto; margin-right: auto;
+	text-align: center;
+	font-size: 10px;
+}
